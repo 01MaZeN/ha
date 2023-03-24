@@ -1,0 +1,80 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.vv{
+    text-align: center;
+    margin: auto;
+    width: 500px;
+}
+.vv p{
+    position: relative;
+    border-right: 4px solid#f44336;
+    background-color: #ddd;
+    counter-increment: number;
+}
+.vv p::before{
+    position: absolute;
+    content: counter(number );
+    background-color: #f71b0c;
+    width: 40px;
+    left: 0;
+    top: 0;
+    line-height: 2.;
+    color: white;
+}
+hr{
+    display: block;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    margin-left: auto;
+    margin: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 50px;
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+

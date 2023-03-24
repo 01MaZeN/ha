@@ -1,0 +1,33 @@
+div{
+    margin: 20px auto;
+    width: 400px;
+}
+div p{
+    width: 400px;
+    background-color: white;
+    padding: 15px;
+    position: relative;
+    border-left: 4px solid #e91a63;
+}
+div p::before{
+    position: absolute;
+    content: attr(data-person);
+    padding: 10px;
+    background-color: #ddd;
+    width: 60px;
+    top: 50%;
+    left: -100px;
+    margin-top: -19px;
+    text-align: center;
+}
+div p::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border: solid 10px;
+    border-color: transparent #e91e63 transparent transparent;
+    top: 50%;
+    margin-top: -10px;
+    left:-24px;
+}
